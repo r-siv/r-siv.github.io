@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #e1e1e1;
+    color: #ffffff;
     background-color: #1a1a1a;
 }
 
@@ -93,7 +93,7 @@ h2 {
     background: #363636;
     padding: 1.5rem;
     border-radius: 8px;
-    text-align: center;
+    text-align: left;
     border-left: 4px solid #3498db;
     transition: transform 0.2s;
 }
@@ -119,7 +119,7 @@ h2 {
     padding-left: 1.5rem;
     margin-bottom: 0.5rem;
     line-height: 1.4;
-    color: #e1e1e1;
+    color: #ffffff;
 }
 
 .interests-list li::before {
@@ -184,9 +184,26 @@ h2 {
     font-size: 1.3rem;
 }
 
+.center-heading {
+    text-align: center;
+}
+
 .project p {
     margin-bottom: 1rem;
-    color: #e1e1e1;
+    color: #ffffff;
+}
+
+.project-location {
+    color: #3498db;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.project-year {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-style: italic;
 }
 
 .project-links a {
@@ -245,7 +262,7 @@ h2 {
 
 .publication-title-link {
     text-decoration: none;
-    color: inherit;
+    color: #ffffff;
     transition: color 0.3s;
 }
 
@@ -255,7 +272,7 @@ h2 {
 
 .publication-title {
     font-weight: bold;
-    color: inherit;
+    color: #ffffff;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
@@ -302,7 +319,7 @@ h2 {
 .contact-text {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: #555;
+    color: #ffffff;
 }
 
 .contact-links {
