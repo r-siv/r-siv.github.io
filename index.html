@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raam Sivakumar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,15 +15,22 @@
             <div class="section-content">
                 <h1>Raam Sivakumar</h1>
                 <p class="subtitle">PhD student at The University of British Columbia</p>
+                <nav class="section-nav">
+                    <a href="#about">About</a>
+                    <a href="#interests">Interests & Education</a>
+                    <a href="#experiences">Experiences</a>
+                    <a href="#research">Research</a>
+                    <a href="#contact">Contact</a>
+                </nav>
             </div>
         </header>
 
-                <section>
+                <section id="about">
             <div class="section-content">
                 <h2 class="center-heading">About Me</h2>
                 <div class="about-content">
                     <div class="profile-image">
-                        👨‍💻
+                        <img src="images/headshot.jpg" alt="Raam Sivakumar" />
                     </div>
                     <div class="about-text">
                         <p>I am a Bioinformatics PhD student at UBC's Computational Biology Lab being co-supervised by Dr. Amrit Singh and Dr. Zachary Laksman.</p>
@@ -32,9 +42,8 @@
             </div>
         </section>
 
-        <section>
+        <section id="interests">
             <div class="section-content">
-                <h2 class="center-heading">Interests</h2>
                 <div class="skills-grid">
                     <div class="skill-item">
                         <h3>Fields of Interest</h3>
@@ -67,7 +76,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="experiences">
             <div class="section-content">
                 <h2 class="center-heading">Experiences</h2>
                 <div class="projects-list">
@@ -79,27 +88,28 @@
                     </div>
                     <div class="project">
                         <h3>Bioinformatics Masters Project</h3>
-                        <p class="project-location">Department of Biomedical Sciences, University of Guelph</p>
-                        <p class="project-year">Guelph ON * 2021-2022</p>
+                        <p class="project-location">Reproductive Biology Lab, Department of Biomedical Sciences, University of Guelph</p>
+                        <p class="project-year">Guelph ON * 2021 - 2022</p>
                         <p>Pursued major research project under supervision of Dr. Jonathan LaMarre. Project was on "Development of a bioinformatics pipeline for investigating bovine sperm piRNA marker expression and identifying associations with fertility".</p>
                     </div>
                     <div class="project">
                         <h3>Research Student</h3>
                         <p class="project-location">Krembil Research Institute, University Health Network</p>
-                        <p class="project-year">Toronto ON * 2020-2021</p>
+                        <p class="project-year">Toronto ON * 2020 - 2021</p>
                         <p>Interned in Rheumatology division under supervision of Dr. Vinod Chandran. Bioinformatics project was on "Identifying heritable and de-novo genetic dispositions and pathways for severe psoriatic arthritis (PsA)".</p>
+                        <p>Additionally, provided computational support on another project on "Identification of Biomarkers and Deregulated Pathways in Psoriatic Arthritis Through Proteomic Analysis of Synovial Fluid"</p>
                     </div>
                     <div class="project">
                         <h3>Research Assistant</h3>
                         <p class="project-location">Trillium Health Partners</p>
-                        <p class="project-year">Mississauga ON * 2014-2016</p>
+                        <p class="project-year">Mississauga ON * 2014 - 2016</p>
                         <p>Employed as a research assistant each summer in Research Operations department</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="research">
             <div class="section-content">
                 <h2 class="center-heading">Research History</h2>
                 <div class="publications-list">
@@ -113,7 +123,6 @@
                             <p class="publication-venue">International Journal of Molecular Sciences (2025)</p>
                             <div class="publication-links">
                                 <a href="https://doi.org/10.3390/ijms26030995" class="pub-link" title="Digital Object Identifier"><i class="fas fa-external-link-alt"></i>DOI</a>
-                                <a href="#" class="pub-link" title="Download PDF"><i class="far fa-file-pdf"></i>PDF</a>
                             </div>
                         </div>
                         <div class="publication-item">
@@ -124,7 +133,6 @@
                             <p class="publication-venue">Systems Biology in Reproductive Medicine (2024)</p>
                             <div class="publication-links">
                                 <a href="https://doi.org/10.1080/19396368.2024.2364742" class="pub-link" title="Digital Object Identifier"><i class="fas fa-external-link-alt"></i>DOI</a>
-                                <a href="#" class="pub-link" title="Download PDF"><i class="far fa-file-pdf"></i>PDF</a>
                             </div>
                         </div>
                     </div>
@@ -148,11 +156,11 @@
             </div>
         </section>
       
-        <section>
+        <section id="contact">
             <div class="section-content">
                 <h2 class="center-heading">Contact Me</h2>
                 <div class="contact-section">
-                    <p class="contact-text">Please get in touch if you would like my CV, collaborate or just chat about research</p>
+                    <p class="contact-text">Please get in touch if you would like my CV, collaborate, or just chat about research</p>
                     <div class="contact-links">
                         <a href="mailto:raam.sivakumar@gmail.com"><i class="fas fa-envelope"></i>Email</a>
                         <a href="https://github.com/r-siv"><i class="fab fa-github"></i>GitHub</a>
