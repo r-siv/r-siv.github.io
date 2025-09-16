@@ -12,9 +12,9 @@ body {
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -40,11 +40,24 @@ h1 {
 }
 
 section {
+    width: 100%;
+    padding: 4rem 2rem;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+section:nth-child(odd) {
     background: #2d2d2d;
-    margin: 2rem 0;
-    padding: 2.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+section:nth-child(even) {
+    background: #1e2937;
+}
+
+.section-content {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 h2 {
