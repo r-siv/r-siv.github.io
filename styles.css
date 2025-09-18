@@ -1,3 +1,17 @@
+:root {
+    --primary-blue: #64b5f6;
+    --accent-blue: #3498db;
+    --dark-blue: #2980b9;
+    --bg-dark: #1a1a1a;
+    --bg-section-1: #111827;
+    --bg-section-2: #1f2937;
+    --bg-card: #363636;
+    --text-white: #ffffff;
+    --text-gray: #e1e1e1;
+    --text-light-gray: #b0b0b0;
+    --text-dark-gray: #888;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +25,8 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #ffffff;
-    background-color: #1a1a1a;
+    color: var(--text-white);
+    background-color: var(--bg-dark);
 }
 
 .container {
@@ -22,7 +36,7 @@ body {
 }
 
 header {
-    background: #1f2937;
+    background: var(--bg-section-2);
     color: white;
     text-align: center;
     padding: 3rem 1rem;
@@ -34,13 +48,13 @@ header {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: #fff;
+    color: var(--text-white);
 }
 
 .subtitle {
     font-size: 1.3rem;
     opacity: 0.9;
-    color: #e1e1e1;
+    color: var(--text-gray);
 }
 
 .section-nav {
@@ -52,7 +66,7 @@ h1 {
 }
 
 .section-nav a {
-    color: #e1e1e1;
+    color: var(--text-gray);
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.2s;
@@ -61,7 +75,7 @@ h1 {
 }
 
 .section-nav a:hover {
-    color: #64b5f6;
+    color: var(--primary-blue);
 }
 
 .section-nav a::after {
@@ -71,7 +85,7 @@ h1 {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #64b5f6;
+    background-color: var(--primary-blue);
     transition: width 0.2s;
 }
 
@@ -83,16 +97,14 @@ section {
     width: 100%;
     padding: 4rem 2rem;
     margin: 0;
-    border-radius: 0;
-    box-shadow: none;
 }
 
 section:nth-child(odd) {
-    background: #111827;
+    background: var(--bg-section-1);
 }
 
 section:nth-child(even) {
-    background: #1f2937;
+    background: var(--bg-section-2);
 }
 
 .section-content {
@@ -101,11 +113,15 @@ section:nth-child(even) {
 }
 
 h2 {
-    color: #64b5f6;
+    color: var(--primary-blue);
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
-    border-bottom: 3px solid #64b5f6;
+    border-bottom: 3px solid var(--primary-blue);
     padding-bottom: 0.5rem;
+}
+
+.center-heading {
+    text-align: center;
 }
 
 .about-content {
@@ -147,15 +163,15 @@ h2 {
 }
 
 .skill-item {
-    background: #363636;
+    background: var(--bg-card);
     padding: 1.5rem;
     border-radius: 8px;
     text-align: left;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid var(--accent-blue);
 }
 
 .skill-item h3 {
-    color: #3498db;
+    color: var(--accent-blue);
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -171,14 +187,15 @@ h2 {
     padding-left: 1.5rem;
     margin-bottom: 0.5rem;
     line-height: 1.4;
-    color: #ffffff;
+    color: var(--text-white);
 }
 
-.interests-list li::before {
+.interests-list li::before,
+.education-list li::before {
     content: "•";
     position: absolute;
     left: 0;
-    color: #3498db;
+    color: var(--accent-blue);
     font-weight: bold;
 }
 
@@ -192,28 +209,14 @@ h2 {
     margin-bottom: 0;
 }
 
-.education-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #3498db;
-    font-weight: bold;
-}
-
 .degree {
     font-weight: bold;
-    color: #fff;
-    margin-bottom: 0.2rem;
-}
-
-.year {
-    color: #3498db;
-    font-size: 0.9rem;
+    color: var(--text-white);
     margin-bottom: 0.2rem;
 }
 
 .institution {
-    color: #b0b0b0;
+    color: var(--text-light-gray);
     font-size: 0.95rem;
     font-style: italic;
 }
@@ -227,54 +230,70 @@ h2 {
 .project {
     margin-bottom: 2.5rem;
     padding: 1.5rem;
-    background: #363636;
+    background: var(--bg-card);
     border-radius: 8px;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid var(--accent-blue);
 }
 
 .project h3 {
-    color: #3498db;
+    color: var(--accent-blue);
     margin-bottom: 0.8rem;
     font-size: 1.3rem;
     text-align: center;
 }
 
-.center-heading {
-    text-align: center;
-}
-
 .project p {
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: var(--text-white);
 }
 
 .project-location {
-    color: #3498db;
+    color: var(--accent-blue);
     font-size: 0.9rem;
     margin-bottom: 0.2rem;
 }
 
 .project-year {
-    color: #888;
+    color: var(--text-dark-gray);
     font-size: 0.9rem;
     margin-bottom: 1rem;
 }
 
-.project-links a {
-    display: inline-block;
-    margin-right: 1rem;
-    padding: 0.7rem 1.5rem;
-    background: #3498db;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    transition: background 0.3s;
-    font-family: 'Roboto', sans-serif;
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-.project-links a:hover {
-    background: #2980b9;
+.project-info {
+    flex: 1;
+}
+
+.project-logo {
+    flex-shrink: 0;
+    width: 200px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    padding: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.project-header .project-info h3 {
+    text-align: left !important;
+    margin-bottom: 0.5rem;
 }
 
 .publications-list {
@@ -284,24 +303,20 @@ h2 {
 }
 
 .publication {
-    background: #363636;
+    background: var(--bg-card);
     padding: 1.5rem;
     border-radius: 8px;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid var(--accent-blue);
 }
 
 .publication h3 {
-    color: #3498db;
+    color: var(--accent-blue);
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-}
-
-.publication h3 i {
-    color: #3498db;
 }
 
 .publication-item {
@@ -318,28 +333,28 @@ h2 {
 
 .publication-title-link {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--text-white);
     transition: color 0.3s;
 }
 
 .publication-title-link:hover {
-    color: #3498db;
+    color: var(--accent-blue);
 }
 
 .publication-title {
     font-weight: bold;
-    color: #ffffff;
+    color: var(--text-white);
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
 
 .publication-authors {
-    color: #b0b0b0;
+    color: var(--text-light-gray);
     margin-bottom: 0.5rem;
 }
 
 .publication-venue {
-    color: #888;
+    color: var(--text-dark-gray);
     font-size: 0.95rem;
     margin-bottom: 1rem;
 }
@@ -355,7 +370,7 @@ h2 {
     gap: 0.5rem;
     padding: 0.5rem 1rem;
     background: #2d2d2d;
-    color: #3498db;
+    color: var(--accent-blue);
     text-decoration: none;
     border-radius: 4px;
     font-size: 0.9rem;
@@ -364,7 +379,7 @@ h2 {
 }
 
 .pub-link:hover {
-    background: #3498db;
+    background: var(--accent-blue);
     color: white;
 }
 
@@ -375,7 +390,7 @@ h2 {
 .contact-text {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: #ffffff;
+    color: var(--text-white);
 }
 
 .contact-links {
@@ -405,43 +420,21 @@ h2 {
     background: #34495e;
 }
 
-footer {
-    text-align: center;
-    padding: 2rem 0;
-    color: #777;
-    margin-top: 2rem;
-    border-top: 1px solid #ddd;
-}
-
-.thank-you-section {
-    text-align: center;
-    padding: 4rem 2rem;
-}
-
-.thank-you-section h1 {
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
-}
-
-.thank-you-section p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 2rem;
-}
-
-.back-btn {
+.project-links a {
     display: inline-block;
-    padding: 1rem 2rem;
-    background: #3498db;
+    margin-right: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: var(--accent-blue);
     color: white;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
+    border-radius: 5px;
+    font-size: 0.9rem;
     transition: background 0.3s;
+    font-family: 'Roboto', sans-serif;
 }
 
-.back-btn:hover {
-    background: #2980b9;
+.project-links a:hover {
+    background: var(--dark-blue);
 }
 
 @media (max-width: 768px) {
@@ -461,5 +454,21 @@ footer {
 
     section {
         padding: 1.5rem;
+    }
+    
+    .project-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .project-logo {
+        width: 180px;
+        height: 110px;
+    }
+    
+    .project-header .project-info h3 {
+        text-align: center;
     }
 }
