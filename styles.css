@@ -488,6 +488,31 @@ h2 {
     background: var(--dark-blue);
 }
 
+.photography-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    background: var(--bg-card);
+    color: var(--text-white);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid var(--accent-blue);
+}
+
+.photography-btn:hover {
+    background: var(--accent-blue);
+    color: white;
+}
+
+.photography-btn i {
+    font-size: 1rem;
+}
+
 [data-theme="light"] .skill-item,
 [data-theme="light"] .project,
 [data-theme="light"] .publication {
@@ -540,6 +565,17 @@ h2 {
     background: var(--accent-blue);
     color: white;
     transform: scale(1.05);
+}
+
+[data-theme="light"] .photography-btn {
+    background: var(--bg-card);
+    color: var(--accent-blue);
+    border: 2px solid var(--accent-blue);
+}
+
+[data-theme="light"] .photography-btn:hover {
+    background: var(--accent-blue);
+    color: white;
 }
 
 @media (max-width: 768px) {
