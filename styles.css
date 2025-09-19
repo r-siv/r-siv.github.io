@@ -12,6 +12,49 @@
     --text-dark-gray: #888;
 }
 
+[data-theme="light"] {
+    --bg-dark: #f5f5f5;
+    --bg-section-1: #ffffff;
+    --bg-section-2: #f8f9fa;
+    --bg-card: #ffffff;
+    --text-white: #333333;
+    --text-gray: #555555;
+    --text-light-gray: #666666;
+    --text-dark-gray: #777777;
+}
+
+.theme-toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.theme-toggle {
+    background: #ffffff;
+    border: 2px solid var(--accent-blue);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: var(--accent-blue);
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    background: var(--accent-blue);
+    color: white;
+    transform: scale(1.05);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +70,7 @@ body {
     line-height: 1.6;
     color: var(--text-white);
     background-color: var(--bg-dark);
+    transition: all 0.3s ease;
 }
 
 .container {
@@ -39,6 +83,7 @@ header {
     background: var(--bg-section-2);
     color: white;
     text-align: center;
+    position: relative;
     padding: 3rem 1rem;
     margin-bottom: 2rem;
     border-radius: 10px;
@@ -307,6 +352,8 @@ h2 {
     padding: 1.5rem;
     border-radius: 8px;
     border-left: 4px solid var(--accent-blue);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--accent-blue);
 }
 
 .publication h3 {
@@ -322,9 +369,10 @@ h2 {
 .publication-item {
     margin-bottom: 2rem;
     padding: 1rem;
-    background: #404040;
+    background: var(--bg-card);
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .publication-item:last-child {
@@ -369,13 +417,14 @@ h2 {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background: #2d2d2d;
+    background: var(--bg-card);
     color: var(--accent-blue);
     text-decoration: none;
     border-radius: 4px;
     font-size: 0.9rem;
     transition: all 0.3s;
     font-family: 'Roboto', sans-serif;
+    border: 1px solid var(--accent-blue);
 }
 
 .pub-link:hover {
@@ -402,13 +451,14 @@ h2 {
 
 .contact-links a {
     padding: 1rem 2rem;
-    background: #2c3e50;
-    color: white;
+    background: var(--bg-card);
+    color: var(--text-white);
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
     transition: background 0.3s;
     font-family: 'Roboto', sans-serif;
+    border: 2px solid var(--accent-blue);
 }
 
 .contact-links a i {
@@ -417,7 +467,8 @@ h2 {
 }
 
 .contact-links a:hover {
-    background: #34495e;
+    background: var(--accent-blue);
+    color: white;
 }
 
 .project-links a {
@@ -435,6 +486,60 @@ h2 {
 
 .project-links a:hover {
     background: var(--dark-blue);
+}
+
+[data-theme="light"] .skill-item,
+[data-theme="light"] .project,
+[data-theme="light"] .publication {
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid var(--accent-blue);
+}
+[data-theme="light"] .publication-item {
+    background: var(--bg-card);
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+[data-theme="light"] .pub-link {
+    background: var(--bg-card);
+    border: 1px solid var(--accent-blue);
+}
+
+[data-theme="light"] .pub-link:hover {
+    background: var(--accent-blue);
+    color: white;
+}
+
+[data-theme="light"] .project-logo {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] header {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+[data-theme="light"] .contact-links a {
+    background: var(--bg-card);
+    color: var(--accent-blue);
+    border: 2px solid var(--accent-blue);
+}
+
+[data-theme="light"] .contact-links a:hover {
+    background: var(--accent-blue);
+    color: white;
+}
+
+[data-theme="light"] .theme-toggle {
+    background: var(--text-white);
+    color: var(--accent-blue);
+    border: 2px solid var(--accent-blue);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .theme-toggle:hover {
+    background: var(--accent-blue);
+    color: white;
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
